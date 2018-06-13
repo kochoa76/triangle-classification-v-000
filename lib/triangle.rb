@@ -16,6 +16,15 @@ class Triangle
       :scalene
     end
   end
+
+    def validate_triangle 
+      valid_triangle = (side_a + side_b>side_c), (side_b + side_c> side_a), (side_c +side_a > side_b)
+      [side_a, side_b, side_c].each do |side| if side<=0
+        valid_triangle = false 
+      raise TriangleError if valid_triangle = false 
+    end 
+  end 
+      
 end
 
     class TriangleError< StandardError
