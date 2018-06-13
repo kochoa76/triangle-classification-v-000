@@ -5,8 +5,6 @@ class Triangle
     @side_a = side_a
     @side_b= side_b
     @side_c = side_c
-
-    end
   end
 
   def kind
@@ -17,3 +15,4 @@ class Triangle
     else
       :scalene
     end
+  end
