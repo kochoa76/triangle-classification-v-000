@@ -5,18 +5,16 @@ class Triangle
     @side_a = side_a
     @side_b= side_b
     @side_c = side_c
-    
+
     end
   end
 
   def kind
-    if side_a == side_b == side_c 
+    if side_a == side_b == side_c
       :equilateral
-    elsif side_a || side_b || side_c == side_a || side_b || side_c 
-      :isoceles 
-    else 
+    elsif side_a || side_b || side_c == side_a || side_b || side_c
+      :isoceles
+    else
       :scalene
     end
-  end
-
   end
