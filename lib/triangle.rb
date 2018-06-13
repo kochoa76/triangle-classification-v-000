@@ -19,8 +19,7 @@ class Triangle
 
     def validate_triangle
       valid_triangle = (side_a + side_b>side_c), (side_b + side_c> side_a), (side_c +side_a > side_b)
-      [side_a, side_b, side_c].each do |side| if side<=0
-        valid_triangle == false
+      [side_a, side_b, side_c].each {|side| if side<=0alid_triangle == false}
       raise TriangleError if valid_triangle == false
     end
   end
@@ -30,6 +29,6 @@ end
     class TriangleError< StandardError
       def message
       puts The sum of the lengths of any two sides of a triangle always exceeds the length of the third side
- end
- end
+      end
+    end
  end   
