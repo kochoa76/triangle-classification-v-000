@@ -19,7 +19,7 @@ class Triangle
 
     def validate_triangle
       valid_triangle = (side_a + side_b>side_c), (side_b + side_c> side_a), (side_c +side_a > side_b)
-      [side_a, side_b, side_c].each {|side| if side<=0alid_triangle << false}
+      [side_a, side_b, side_c].each {|side| if side<=valid_triangle << false}
       raise TriangleError if valid_triangle << false
     end
   end
