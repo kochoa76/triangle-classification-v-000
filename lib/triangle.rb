@@ -22,8 +22,6 @@ class Triangle
       [side_a, side_b, side_c].each {|side| valid_triangle << false if side<=0 }
       raise TriangleError if valid_triangle << false
     end
-  end
-
 
 
     class TriangleError< StandardError
